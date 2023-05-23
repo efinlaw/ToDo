@@ -1,0 +1,69 @@
+:root {
+/* LIGHT THEME COLORS */
+    --gray00: #ffffff;
+    --gray05: #f5f6f7;
+    --gray10: #dfdfe2;
+    --gray15: #d0d0d5;
+
+/* DARK THEME COLORS */
+    --gray90: #0a0a23;
+    --gray85: #1b1b32;
+    --gray80: #2a2a40;
+    --gray75: #3b3b4f;
+
+/* PRIMARY COLORS */
+    --purple: #dbb8ff;
+    --yellow: #f1be32;
+    --blue: #99c9ff;
+    --light-green: #acd157;
+
+/* SECONDARY COLORS */
+    --dark-purple: #5a01a7;
+    --dark-yellow: #4d3800;
+    --dark-blue: #002ead;
+    --dark-green: #00471b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: var(--gray00);
+    color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background-color: var(--gray90);
+    color: var(--gray00);
+}
+
+h1 {
+    flex: 1 1 200px;
+    font-size: min(5vw, 2em);
+    padding-left: 20px;
+}
+
+nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
