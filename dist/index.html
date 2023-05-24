@@ -8,8 +8,8 @@
 <script defer src="index.bundle.js"></script></head>
 <body>
     <header>
-        <h1>ToDo</h1>
-        <nav>
+        <h1 class="title">ToDo</h1>
+        <nav class="login">
             <ul>
                 <li class="logged-out"><a href='#'>Sign Up</a></li>
                 <li class="logged-out"><a href='#'>Sign In</a></li>
@@ -17,5 +17,18 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="sidebar">
+            <section class="sidebar-todo">
+                <h3 class="home">Home</h3>
+                <h3 class="today">Today</h3>
+                <h3 class="week">This Week</h3>
+            </section>
+            <section class="sidebar-projects">
+                <h2 class="projects">Projects</h2>
+                <button class="add-project">Add Project</button>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
