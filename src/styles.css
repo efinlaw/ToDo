@@ -80,6 +80,10 @@ nav ul {
     list-style: none;
 }
 
+main {
+    display: flex;
+}
+
 .sidebar {
     width: 300px;
     height: 100vh;
@@ -94,5 +98,14 @@ nav ul {
 
 .home {
     margin-top: 0;
+}
+
+.todo-container {
+    height: 100vh;
+    width: 50vw;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--gray10);
 }
 
