@@ -93,19 +93,41 @@ main {
 
 .sidebar-todo {
     padding-left: 10px;
-    color: var(--dark-purple);
+    color: var(--dark-yellow);
 }
 
-.home {
+.project-name {
+    color: var(--dark-yellow);
+}
+
+a {
+    color: var(--dark-yellow);
+    text-decoration: none;
+}
+
+#home {
     margin-top: 0;
 }
 
 .todo-container {
     height: 100vh;
+    max-height: 1000px;;
     width: 50vw;
     max-width: 1000px;
     margin: 25px auto;
     padding: 25px;
-    background-color: var(--gray10);
+}
+
+button {
+    text-align: center;
+    height: 3em;
+    width: auto;
+    border: none;
+    border-radius: 10px;
+    padding: 0 15px;
+    background-color: var(--dark-purple);
+    font-weight: 700;
+    color: var(--gray00);
+    cursor: pointer;
 }
 
