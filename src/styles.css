@@ -78,6 +78,8 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    margin: 0;
+    height: 50px;
 }
 
 main {
@@ -130,4 +132,3 @@ button {
     color: var(--gray00);
     cursor: pointer;
 }
-
