@@ -118,6 +118,7 @@ a {
     max-width: 1000px;
     margin: 25px auto;
     padding: 25px;
+    background-color: var(--gray10);
 }
 
 button {
@@ -131,4 +132,10 @@ button {
     font-weight: 700;
     color: var(--gray00);
     cursor: pointer;
+}
+
+.task-header, .task {
+    display: flex;
+    justify-content: space-between;
+
 }

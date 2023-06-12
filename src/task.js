@@ -1,4 +1,4 @@
-export default taskFactory = (title, description, dueDate, priority, project) => {
+const taskFactory = (title, description, dueDate, priority, project) => {
   const getTitle = () => title;
   const getDescription = () => description;
   const getDueDate = () => dueDate;
@@ -9,3 +9,5 @@ export default taskFactory = (title, description, dueDate, priority, project) =>
     getTitle, getDescription, getDueDate, getPriority, getProject,
   };
 };
+
+export default taskFactory;
