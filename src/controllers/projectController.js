@@ -1,4 +1,4 @@
-import projectFactory from './project';
+import projectFactory from '../models/project';
 
 const createProject = (title) => {
   const newProject = projectFactory(title);

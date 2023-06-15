@@ -1,6 +1,9 @@
 import './styles.css';
-import { default as projectFactory } from './project';
-import { createProjectView } from './ui';
+import { default as projectFactory } from './models/project';
+import { createProjectView } from './views/ui';
 
-const home = projectFactory('Home');
-createProjectView(home);
+const initialize = () => {
+  const home = projectFactory('Home');
+  createProjectView(home);
+};
+initialize();
