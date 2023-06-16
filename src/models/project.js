@@ -1,12 +1,26 @@
 const projectFactory = (title) => {
   const taskList = [];
-  const projTitle = title;
+  let projTitle = title;
+
   const getTitle = () => projTitle;
-  const addTask = (task) => {
-    taskList.push(task);
+
+  const editTitle = (newTitle) => {
+    projTitle = newTitle;
   };
 
-  return { getTitle, addTask };
+  const addTask = (task) => {
+    this.taskList.push(task);
+  };
+
+  const getTask = (index) => this.taskList[index];
+
+  const deleteTask = (index) => {
+    delete taskList[index];
+  };
+
+  return {
+    getTitle, editTitle, addTask, getTask, deleteTask,
+  };
 };
 
 export default projectFactory;
