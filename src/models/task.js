@@ -1,27 +1,26 @@
 const taskFactory = (title, description, dueDate, priority, project) => {
-  const self = this;
-  self.title = title;
-  self.description = description;
-  self.dueDate = dueDate;
-  self.priority = priority;
-  self.project = project;
-  const getTitle = () => self.title;
-  const setTitle = (newTitle) => { self.title = newTitle; };
-  const getDescription = () => description;
-  const setDescription = (newDescription) => { self.description = newDescription; };
-  const getDueDate = () => dueDate;
-  const setDueDate = (newDueDate) => { self.dueDate = newDueDate; };
-  const getPriority = () => priority;
-  const setPriority = (newPriority) => { self.priority = newPriority; };
-  const getProject = () => project;
-  const setProject = (newProject) => { self.project = newProject; };
+  let taskTitle = title;
+  let taskDescription = description;
+  let taskDueDate = dueDate;
+  let taskPriority = priority;
+  let taskProject = project;
+  const getTitle = () => taskTitle;
+  const setTitle = (newTitle) => { taskTitle = newTitle; };
+  const getDescription = () => taskDescription;
+  const setDescription = (newDescription) => { taskDescription = newDescription; };
+  const getDueDate = () => taskDueDate;
+  const setDueDate = (newDueDate) => { taskDueDate = newDueDate; };
+  const getPriority = () => taskPriority;
+  const setPriority = (newPriority) => { taskPriority = newPriority; };
+  const getProject = () => taskProject;
+  const setProject = (newProject) => { taskProject = newProject; };
 
   const editTask = (...params) => {
-    self.setTitle(params[0]);
-    self.setDescription(params[1]);
-    self.setDueDate(params[2]);
-    self.setPriority(params[3]);
-    self.setProject(params[4]);
+    setTitle(params[0]);
+    setDescription(params[1]);
+    setDueDate(params[2]);
+    setPriority(params[3]);
+    setProject(params[4]);
   };
 
   return {

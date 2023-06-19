@@ -1,18 +1,16 @@
 const projectFactory = (title) => {
-  const taskList = [];
   let projTitle = title;
+  const taskList = [];
 
   const getTitle = () => projTitle;
 
-  const editTitle = (newTitle) => {
-    projTitle = newTitle;
-  };
+  const editTitle = (newTitle) => { projTitle = newTitle; };
 
   const addTask = (task) => {
-    this.taskList.push(task);
+    taskList.push(task);
   };
 
-  const getTask = (index) => this.taskList[index];
+  const getTask = (index) => taskList[index];
 
   const deleteTask = (index) => {
     delete taskList[index];
