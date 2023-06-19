@@ -1,3 +1,5 @@
+import projectFactory from '../models/project';
+
 const createProjectView = (project) => {
   const name = document.createElement('h2');
   name.classList.add('project-name');
@@ -30,4 +32,9 @@ const createProjectView = (project) => {
   container.appendChild(addTask);
 };
 
-export { createProjectView };
+const loadHomePage = () => {
+  const home = projectFactory('Home');
+  createProjectView(home);
+};
+
+export { createProjectView, loadHomePage };
