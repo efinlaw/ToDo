@@ -12,6 +12,15 @@ const ToDoList = () => {
   const getProject = (title) => projects.find((project) => project.getTitle() === title);
 
   const addProject = (project) => projects.push(project);
+
+  const deleteProject = (title) => {
+    const foundIndex = projects.findIndex((project) => project.getTitle === title);
+    delete projects[foundIndex];
+  };
+
+  return {
+    initializeApp, getProject, addProject, deleteProject,
+  };
 };
 
 export default ToDoList;
