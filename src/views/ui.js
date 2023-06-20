@@ -33,6 +33,8 @@ const createProjectView = (project) => {
 };
 
 const loadHomePage = () => {
+  const container = document.querySelector('.todo-container');
+  container.innerHTML = '';
   const home = projectFactory('Home');
   createProjectView(home);
 };
