@@ -1,3 +1,5 @@
+import { loadHomePage } from '../views/ui';
+
 // DOM elements
 const home = document.getElementById('home');
 const today = document.getElementById('today');
