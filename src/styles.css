@@ -137,5 +137,8 @@ button {
 .task-header, .task {
     display: flex;
     justify-content: space-between;
+}
 
+.new-project {
+    display: none;
 }
