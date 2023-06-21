@@ -5,11 +5,11 @@ const projectManager = () => {
   const projects = [];
 
   const initialize = () => {
-    projects.push(projectFactory('Home'));
+    projects.push(projectFactory('Inbox'));
     projects.push(projectFactory('Today'));
     projects.push(projectFactory('This Week'));
 
-    // Load the home page
+    // Load the inbox on start
     loadProject(projects[0]);
   };
 
