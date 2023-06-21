@@ -38,4 +38,4 @@ const loadProject = (project) => {
   createProjectView(project);
 };
 
-export { createProjectView, loadProject };
+export { loadProject };
