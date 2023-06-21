@@ -4,7 +4,6 @@ const createProjectView = (project) => {
   const name = document.createElement('h2');
   name.classList.add('project-name');
   name.textContent = project.getTitle();
-
   const header = document.createElement('div');
   header.classList.add('task-header');
 

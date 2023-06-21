@@ -1,8 +1,8 @@
 // Project Manager Object
 let projManager;
 
-const setProjectManager = (manager) => {
+const initialize = (manager) => {
   projManager = manager;
 };
 
-export { setProjectManager };
+export { initialize };
