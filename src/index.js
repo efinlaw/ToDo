@@ -1,4 +1,4 @@
 import './styles.css';
-import { loadHomePage } from './views/ui';
+import projectManager from './controllers/projectManager';
 
-document.addEventListener('DOMContentLoaded', loadHomePage);
+document.addEventListener('DOMContentLoaded', initialize);

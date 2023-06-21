@@ -1,9 +1,9 @@
-import projectFactory from './models/project';
+import projectFactory from '../models/project';
 
-const ToDoList = () => {
+const projectManager = () => {
   const projects = [];
 
-  const initializeApp = () => {
+  const initialize = () => {
     projects.push(projectFactory('Home'));
     projects.push(projectFactory('Today'));
     projects.push(projectFactory('This Week'));
@@ -19,8 +19,8 @@ const ToDoList = () => {
   };
 
   return {
-    initializeApp, getProject, addProject, deleteProject,
+    initialize, getProject, addProject, deleteProject,
   };
 };
 
-export default ToDoList;
+export default projectManager;

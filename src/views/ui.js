@@ -32,11 +32,10 @@ const createProjectView = (project) => {
   container.appendChild(addTask);
 };
 
-const loadHomePage = () => {
+const loadProject = (project) => {
   const container = document.querySelector('.todo-container');
   container.innerHTML = '';
-  const home = projectFactory('Home');
-  createProjectView(home);
+  createProjectView(project);
 };
 
-export { createProjectView, loadHomePage };
+export { createProjectView, loadProject };
