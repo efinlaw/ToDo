@@ -52,15 +52,15 @@ header {
 }
 
 h1 {
-    font-size: min(5vw, 2em);
+    font-size: min(5vw, 2rem);
 }
 
 h2 {
-    font-size: min(5vw, 1.5em);
+    font-size: min(5vw, 1.5rem);
 }
 
 h3 {
-    font-size: min(5vw, 1.2em);
+    font-size: min(5vw, 1.2rem);
 }
 
 .title {
