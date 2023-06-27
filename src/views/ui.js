@@ -31,10 +31,23 @@ const createProjectView = (project) => {
   container.appendChild(addTask);
 };
 
+const createNewProject = (project) => {
+  const newProject = document.createElement('h3');
+  newProject.classList.add('project-name');
+  newProject.classList.add('project-clickable');
+  const projectLink = document.createElement('a');
+  projectLink.href = '#';
+  projectLink.textContent = project.getTitle();
+  newProject.appendChild(projectLink);
+
+  const projects = document.querySelector('.projects');
+  projects.appendChild(newProject);
+};
+
 const loadProject = (project) => {
   const container = document.querySelector('.todo-container');
   container.innerHTML = '';
   createProjectView(project);
 };
 
-export { loadProject };
+export { createNewProject, loadProject };
