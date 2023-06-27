@@ -93,14 +93,10 @@ main {
     padding: 25px;
 }
 
-.sidebar-todo {
-    padding-left: 10px;
-    color: var(--dark-yellow);
-}
-
 a {
     color: var(--dark-yellow);
     text-decoration: none;
+    padding-left: 10px;
 }
 
 #inbox {
