@@ -1,5 +1,3 @@
-import projectFactory from '../models/project';
-
 const createProjectView = (project) => {
   const name = document.createElement('h2');
   name.classList.add('project-name');
@@ -31,10 +29,17 @@ const createProjectView = (project) => {
   container.appendChild(addTask);
 };
 
+const loadProject = (project) => {
+  const container = document.querySelector('.todo-container');
+  container.innerHTML = '';
+  createProjectView(project);
+};
+
 const createNewProject = (project) => {
   const newProject = document.createElement('h3');
   newProject.classList.add('project-name');
   newProject.classList.add('project-clickable');
+  newProject.addEventListener('click', loadProject.bind(this, project));
   const projectLink = document.createElement('a');
   projectLink.href = '#';
   projectLink.textContent = project.getTitle();
@@ -42,12 +47,6 @@ const createNewProject = (project) => {
 
   const projects = document.querySelector('.projects');
   projects.appendChild(newProject);
-};
-
-const loadProject = (project) => {
-  const container = document.querySelector('.todo-container');
-  container.innerHTML = '';
-  createProjectView(project);
 };
 
 export { createNewProject, loadProject };
